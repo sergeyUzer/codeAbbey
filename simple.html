@@ -7,7 +7,45 @@
         <p>Read more at
             <a href="http://www.codeabbey.com/index/task_view/basics-of-html">this task</a>.
         </p>
-        <?php
-        echo "Random value is " . rand();
+        <!-- script -->
+<script>
+var stroka = "Hello, world!";
+console.log(stroka);
+
+
+var otvet = 0;
+var apple = {
+	weight: 15.4,
+	color: "red",
+	getWeight: function() {
+	return this.weight;
+	},
+	setWeigth: function(newValue) {
+	this.weight = newValue;
+	}
+};
+
+
+function factorial(input_data) {
+var result = 1;
+for (i = 1; i <= input_data; i++)
+{
+result = result * i;
+}
+return result;
+}
+
+var input = prompt("Enter value:");
+apple.setWeigth(input);
+console.log(factorial(apple.getWeight()));
+var element = document.getElementById('block-1');
+var comment = 'Hello!';
+var br = document.createElement('br');
+var newText = document.createElement('a');
+newText.innerHTML = 'Hello!';
+element.appendChild(br);
+element.appendChild(newText);
+
+</script>
     </body>
 </html>

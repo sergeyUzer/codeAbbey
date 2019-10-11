@@ -3,14 +3,18 @@
         <title>Basics of HTML demo</title>
     </head>
     <body>
-        <p>Secret value is <b>1018179</b>.</p>
-        <p>Read more at
-            <a href="http://www.codeabbey.com/index/task_view/basics-of-html">this task</a>.
-        </p>
         <!-- script -->
 <script>
-var number = randomInteger(1, 500);
-document.write("Привет Мир! " + number);
+function getRandomArbitary(min, max) {
+var secretNumber = 1176;
+do {
+var number = Math.floor(Math.random() * (max - min + 1)) + min;
+} while (number % secretNumber != 0)
+return number;
+}
+
+var number = getRandomArbitary(10000, 99999999);
+document.write("Random value is " + number);
 </script>
     </body>
 </html>

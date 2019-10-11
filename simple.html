@@ -7,14 +7,14 @@ Random value is
         <!-- script -->
 <script>
 function getRandomArbitary(min, max) {
-var secretNumber = 1737;
+var secretNumber = 1038;
 do {
 var number = Math.floor(Math.random() * (max - min + 1)) + min;
 } while (number % secretNumber != 0)
 return number;
 }
 
-var number = getRandomArbitary(10000, 99999999);
+var number = getRandomArbitary(10000, 9999999);
 document.write(number);
 </script>
     </body>
